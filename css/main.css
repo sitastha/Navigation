@@ -1,0 +1,408 @@
+body{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+.navigation-menu-holder{
+  top: 0;
+}
+
+.logo-holder img{
+	height: 55px;
+	width: 55px;
+  z-index: 1;
+}
+
+.mobile-navigation{
+	background-color: #93BD65;
+ /* background-color: #458B00; */  
+ /* background-color: #659D32; */
+ /* background-color: #83F52C; */
+ /*  background-color: #308014; */
+	padding: 10px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.logo-toggle-holder{
+	width: 100%;
+	height: 70px;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#nav-icon1 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span{
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  margin-top: 10px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 5px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 15px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 25px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 15px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 15px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.side-navigation{
+	height: 100%;
+	position: fixed;
+	right: -3px;
+	top: 0;
+	width: 0%;
+	background-color: #93BD65;
+ /* background-color: #458B00; */  
+ /* background-color: #659D32; */
+ /* background-color: #83F52C; */
+ /*  background-color: #308014; */
+  transition: width 0.5s;
+}
+
+.main-menu{
+	list-style: none;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.main-menu li span{
+	float: right;
+}
+
+.main-menu li{
+	padding-top: 30px;
+}
+
+.main-menu a,
+.share-icons a{
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.main-menu a:hover{
+  text-decoration: none;
+}
+
+.icons-holder{
+	margin-top: 65%;
+	padding: 0;
+}
+
+.icons-holder li{
+	display: inline;
+	font-size: 1.5em;
+	padding-right: 30px;
+}
+
+.button-holder a{
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	background-color: #36658F;
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  margin-left: 19px;
+}
+
+.logo-toggle-holder{
+	transition: all 0.5s;
+}
+
+.side-navigation-left{
+  display: block;
+  width: 230px;
+  transition: width 0.5s;
+}
+
+.banner1{
+  background: url('../images/banner1.jpg');
+  min-height: 130vh;
+  background-size: cover;
+}
+
+.intro-content{
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-content{
+  height: 100%;
+  padding: 0;
+}
+
+.main-content h1{
+  padding-top: 30%;
+}
+
+.main-content p{
+  padding-top: 20px;
+}
+
+.intro-content a{
+  display: inline-block;
+  height: 55px;
+  width: 150px;
+  color: #fff;
+  background-color: #36658F;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 17px;
+  margin-top: 30px;
+  transition: all 1s;
+}
+
+.intro-content a span{
+  padding-left: 15px;
+}
+
+.intro-content .sign-up-hover,
+.button-holder .sign-up-hover{
+  background: transparent;
+  border: 1px solid #36658F;
+  transition: all 1s;
+  color: #36658F;
+  text-decoration: none;
+}
+
+.fixed-share-buttons{
+  position: fixed;
+  right: 0;
+  top: 35%;
+  z-index: 1;
+  height: 166px;
+  background: transparent;
+  list-style: none;
+}
+
+.fixed-share-buttons a{
+  color: #000;
+  display: block; 
+  padding-right: 35px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  width: 160px; 
+  height: 33px;
+  background: #fff;
+  margin-left: 50px;
+}
+
+.fixed-share-buttons span{
+  font-size: 1.5em;
+  padding-right: 10px;
+}
+
+.fixed-share-buttons li:nth-child(1) a{
+  position: fixed;
+  right: -123px;
+  top: 200px;
+}
+
+.fixed-share-buttons li:nth-child(2) a{
+  position: fixed;
+  right: -123px;
+  top: 233px;
+}
+
+.fixed-share-buttons li:nth-child(3) a{
+  position: fixed;
+  right: -123px;
+  top: 266px;
+}
+
+.fixed-share-buttons li:nth-child(4) a{
+  position: fixed;
+  right: -123px;
+  top: 299px;
+}
+
+.fixed-share-buttons li:nth-child(5) a{
+  position: fixed;
+  right: -123px;
+  top: 332px;
+  background-color: #93BD65;
+  background-color: #93BD65;
+ /* background-color: #458B00; */  
+ /* background-color: #659D32; */
+ /* background-color: #83F52C; */
+ /*  background-color: #308014; */
+}
+
+
+.fixed-share-buttons li a.settings-hover{
+  position: fixed;
+  right: 0;
+  transition: all 1s;
+}
+
+.fixed-share-buttons li a.settings{
+  transition: all 1s;
+}
+
+@media only screen and (min-width: 1200px){
+  body{
+    height: 3000px;
+  }
+
+  .side-navigation{
+    right: 7%;
+    top: 10%;
+    width: 865px;
+    height: 76px;
+    margin-left: 20px;
+    transition: all 0.5s;
+  }
+  
+  .mobile-navigation{
+    background-color: transparent;
+    position: fixed;
+    top: 10%;
+  }
+
+  .logo-holder{
+    float: right;
+  }
+
+  .main-menu span{
+    display: none;
+  }
+
+  .main-menu-holder{
+    width: 472px;
+  }
+   
+  .main-menu li{
+    display: inline;
+    padding: 0 0 0 25px;
+  }
+    
+  .main-menu a{
+    display: inline-block;
+    padding-top: 25px;
+  }
+  
+  .main-menu a:focus{
+    border-top: 3px solid #fff;
+    text-decoration: none;
+  }
+
+  .icons-holder{
+    margin: 0;
+    width: auto;
+    padding-top: 20px;
+  }
+
+  .icons-holder li:nth-child(3){
+    padding-right: none;
+  }
+
+  .share-icons{
+    padding-left: 0;
+  }
+
+  #nav-icon1{
+    display: none;
+  }
+
+  .button-holder{
+    width: 23%;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .button-holder a{
+    margin-left: none;
+  }
+
+  .side-navigation-top{
+    top: 0;
+    transition: all 0.5s;
+    background: transparent;
+  }
+
+  .mobile-navigation-top{
+    top: 0;
+    transition: all 0.5s;
+  }
+  
+  .logo-toggle-holder{
+    position: fixed;
+    top: 10%;
+    transition: all 0.5s;
+  }
+
+  .logo-toggle-holder-top{
+    background-color: #93BD65;
+ /* background-color: #458B00; */  
+ /* background-color: #659D32; */
+ /* background-color: #83F52C; */
+ /*  background-color: #308014; */
+    position: fixed;
+    top: 0;
+    height: 76px;
+    transition: all 0.5s;
+  }
+
+  .banner1{
+    min-height: 100vh;
+  }
+
+}
+
+@media only screen and (max-width: 1024px){
+  .fixed-share-buttons{
+    display: none;
+  }
+}
+
